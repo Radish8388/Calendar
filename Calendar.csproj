@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>calendar.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="backup 26-03-03\**" />
+    <EmbeddedResource Remove="backup 26-03-03\**" />
+    <None Remove="backup 26-03-03\**" />
+    <Page Remove="backup 26-03-03\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="calendar.png" />
+    <None Remove="temp.pdf" />
+    <None Remove="temp2.pdf" />
+    <None Remove="temp3.pdf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="calendar.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="calendar.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,35 @@
+﻿<Window x:Class="Calendar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calendar"
+        mc:Ignorable="d"
+        Title="Calendar"
+        Height="619" Width="800"
+        MinHeight="200" MinWidth="200"
+        KeyDown="Window_KeyDown">
+
+    <DockPanel>
+    <Menu DockPanel.Dock="Top">
+        <MenuItem Header="Menu">
+            <MenuItem Name="IsColor" Header="Use _Color" IsCheckable="True" IsChecked="True" Click="IsColor_Click"/>
+            <MenuItem Header="Draw _Year" Click="DrawYear_Click"/>
+            <MenuItem Header="Draw _Month" Click="DrawMonth_Click"/>
+            <Separator/>
+            <MenuItem Header="_Print" InputGestureText="Ctrl+P" Click="Print_Click"/>
+            <MenuItem Header="_About" Click="About_Click"/>
+            <MenuItem Header="E_xit" InputGestureText="Alt+F4" Click="Exit_Click"/>
+        </MenuItem>
+        <MenuItem Header="Previous" Click="Previous_Click"/>
+        <MenuItem Header="Next" Click="Next_Click"/>
+        </Menu>
+
+    <Grid x:Name="mainGrid">
+        <Canvas x:Name="canvas"
+        HorizontalAlignment="Stretch"
+        VerticalAlignment="Stretch"
+        SizeChanged="canvas_SizeChanged"/>
+    </Grid>
+    </DockPanel>
+</Window>
