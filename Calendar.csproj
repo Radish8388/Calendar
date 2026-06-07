@@ -6,8 +6,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
-    <ApplicationIcon>calendar.ico</ApplicationIcon>
-    <Version>1.1</Version>
+    <ApplicationIcon>calendar2.ico</ApplicationIcon>
+    <Version>1.1.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="calendar.ico" />
+    <Content Include="calendar2.ico" />
   </ItemGroup>
 
   <ItemGroup>
