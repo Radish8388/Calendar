@@ -7,6 +7,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>calendar.ico</ApplicationIcon>
+    <Version>1.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
